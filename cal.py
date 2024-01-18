@@ -7,7 +7,7 @@ app.config.from_object(__name__)
 def home_page():
     return render_template('index1.html')
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/result', methods=['GET','POST'])
 def Ans():
     if request.method=='POST':
         num1 = request.form.get("num1", type=int)
