@@ -28,7 +28,7 @@ def Ans():
         else:
             result = 'Error!'
         output = result
-        return render_template('index1.html', output=output)
+        return render_template('result.html', output=output)
 
 
 if __name__ == '__main__':
